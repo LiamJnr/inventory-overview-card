@@ -20,6 +20,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 16px;
 }
 
 .container{
@@ -27,58 +28,55 @@ body{
     border-radius: 8px;
     padding: 16px;
     display: flex;
-    align-items: center;
-    gap: 28px;
+    align-items: start;
+    gap: 18px;
 }
 
-.stock-level__cntnr{
-    background: lightgray;
-    block-size: 69px;
-    inline-size: 8px;
-    border-radius: 100vh;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-}
-
-.stock-level__bar{
-    block-size: 24px;
-    inline-size: 100%;
-    background: red;
-    border-radius: 100vh;
-}
-
-.threshold-point{
-    position: absolute;
-    block-size: 6px;
-    inline-size: 6px;
-    background: gray;
-    border-radius: 100vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.splitter{
+    block-size: 80px;
+    inline-size: 1px;
+    background: rgb(170, 170, 170);
 }
 
 .stock-count__cntnr{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(0px, -50%);
-    /* background: gray; */
-    inline-size: 120px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 18px;
+}
+
+.stock-count{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    /* background: gray; */
+    gap: 10px;
+    color: rgb(146, 146, 146);
 }
 
-.threshold-divider{
-    block-size: 1px;
+.stock-count span{
+    color: black;
+    font-weight: 500;
+}
+
+.stock-level__cntnr{
+    background: rgb(233, 229, 229);
+    inline-size: 69px;
+    block-size: 24px;
+    border-radius: 6px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.stock-level__bar{
+    block-size: 6px;
     inline-size: 100%;
     background: red;
 }
 
 .product__name-profit{
+    /* background: bisque; */
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -88,6 +86,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2px;
+    /* background: greenyellow; */
 }
 
 .product-name{

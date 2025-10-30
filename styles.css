@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+
+body{
+    block-size: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.stock-level__cntnr{
+    background: lightgray;
+    block-size: 69px;
+    inline-size: 8px;
+    border-radius: 100vh;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.stock-level__bar{
+    block-size: 24px;
+    inline-size: 100%;
+    background: red;
+    border-radius: 100vh;
+}
+
+.threshold-point{
+    position: absolute;
+    block-size: 6px;
+    inline-size: 6px;
+    background: gray;
+    border-radius: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stock-count__cntnr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0px, -50%);
+    /* background: gray; */
+    inline-size: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.threshold-divider{
+    block-size: 1px;
+    inline-size: 100%;
+    background: red;
+}
+
+.product__name-profit{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-name__cntnr{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.product-name{
+    font-weight: 500;
+}
+
+.product-id{
+    color: rgb(146, 146, 146);
+    font-size: 14px;
+}
+
+.product-profit{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.bull-icon{
+    block-size: 18px;
+    inline-size: 18px;
+    background: #DDFFDA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.bull-icon svg{
+    fill: #00D873;
+}
+
+.product-profit span{
+    color: #00D873;
+}

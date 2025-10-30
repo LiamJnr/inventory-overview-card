@@ -29,64 +29,26 @@ body{
     padding: 16px;
     display: flex;
     align-items: start;
-    gap: 18px;
-}
-
-.splitter{
-    block-size: 80px;
-    inline-size: 1px;
-    background: rgb(170, 170, 170);
-}
-
-.stock-count__cntnr{
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    gap: 18px;
-}
-
-.stock-count{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background: gray; */
-    gap: 10px;
-    color: rgb(146, 146, 146);
-}
-
-.stock-count span{
-    color: black;
-    font-weight: 500;
-}
-
-.stock-level__cntnr{
-    background: rgb(233, 229, 229);
-    inline-size: 69px;
-    block-size: 24px;
-    border-radius: 6px;
-    display: flex;
-    align-items: flex-end;
-    overflow: hidden;
-}
-
-.stock-level__bar{
-    block-size: 6px;
     inline-size: 100%;
-    background: red;
 }
 
 .product__name-profit{
-    /* background: bisque; */
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
+    inline-size: 100%;
 }
 
 .product-name__cntnr{
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+.product-name-id{
+    display: flex;
+    flex-direction: column;
     gap: 2px;
-    /* background: greenyellow; */
 }
 
 .product-name{
@@ -99,6 +61,7 @@ body{
 }
 
 .product-profit{
+    margin-top: auto;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -122,4 +85,49 @@ body{
 
 .product-profit span{
     color: #00D873;
+}
+
+.stock-count__cntnr{
+    /* background: rgb(243, 243, 243); */
+    /* block-size: 100%; */
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 6px;
+    inline-size: 100%;
+}
+
+.stock-count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: rgb(146, 146, 146);
+}
+
+.stock-level__cntnr{
+    background: rgb(189, 189, 189);
+    inline-size: 100%;
+    block-size: 6px;
+    border-radius: 6px;
+    display: flex;
+    overflow: hidden;
+}
+
+.stock-level__bar{
+    block-size: 100%;
+    inline-size: 20%;
+    background: red;
+}
+
+.stock-labels{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(146, 146, 146);
+}
+
+.stock-labels span{
+    color: black;
+    font-weight: 500;
 }

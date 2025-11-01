@@ -7,32 +7,40 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section class="container">
-        <div class="product__name-profit">
-            <div class="product-name__cntnr">
-                <div class="product-name-id">
-                    <p class="product-name">Widget Pro</p>
-                    <p class="product-id">WP-001</p>
-                </div>
-                <div class="product-profit">
-                    <div class="bull-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"></path></svg>
+    <section class="inventory-overview-sctn section">
+        <div class="section__name-brief">
+            <h3 class="section-name">All Products</h3>
+            <p>Complete inventory overview with stock levels and profitability</p>
+        </div>
+        <div class="product-overview-cards__cntnr">
+            <button type="button" class="product-overview-card">
+                <div class="overview-name__cntnr">
+                    <div class="overview-name-id">
+                        <p class="overview-prod-name">Widget Pro</p>
+                        <p class="overview-prod-id">WP-001</p>
                     </div>
-                    <p><span>GHS428.00</span> profit</p>
-                </div>
-            </div>
-            <div class="stock-count__cntnr">
-                <div class="stock-count">
-                    <div class="stock-level__cntnr">
-                        <div class="stock-level__bar"></div>
+                    <div class="overview-profit">
+                        <div class="overview-bull-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"></path></svg>
+                        </div>
+                        <p><span>GHS428.00</span> profit</p>
                     </div>
                 </div>
-                <div class="stock-labels">
-                    <p><span>120</span> in stock</p>
-                    <p>reorder at 150</p>
+                <div class="overview-stock-count">
+                    <div class="stock-count">
+                        <div class="stock-level__cntnr">
+                            <div class="stock-level__bar"></div>
+                        </div>
+                    </div>
+                    <div class="stock-labels">
+                        <p><span>120</span> in stock</p>
+                        <p>reorder at 150</p>
+                    </div>
                 </div>
-            </div>
-        </div>      
+            </button>
+        </div>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>

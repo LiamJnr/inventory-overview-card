@@ -23,44 +23,67 @@ body{
     padding: 16px;
 }
 
-.container{
+.inventory-overview-sctn{
     border: 1px solid lightgray;
     border-radius: 8px;
     padding: 16px;
     display: flex;
     align-items: start;
+    flex-direction: column;
+    gap: 32px;
     inline-size: 100%;
 }
 
-.product__name-profit{
+.section__name-brief{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.section__name-brief p{
+    /* font-size: 14px; */
+    color: #8b8b8b;
+}
+
+.product-overview-cards__cntnr{
+    /* background: gray; */
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+}
+
+.product-overview-card{
     display: flex;
     flex-direction: column;
     gap: 24px;
     inline-size: 100%;
+    padding: 16px;
 }
-
-.product-name__cntnr{
+.overview-name__cntnr,
+.overview-name-id{
     display: flex;
     flex-direction: column;
+    align-items: start;
+}
+
+.overview-name__cntnr{
     gap: 8px;
 }
 
-.product-name-id{
-    display: flex;
-    flex-direction: column;
+.overview-name-id{
     gap: 2px;
 }
 
-.product-name{
+.overview-prod-name{
     font-weight: 500;
 }
 
-.product-id{
+.overview-prod-id{
     color: rgb(146, 146, 146);
     font-size: 14px;
 }
 
-.product-profit{
+.overview-profit{
     margin-top: auto;
     display: flex;
     align-items: center;
@@ -68,7 +91,7 @@ body{
     font-size: 14px;
 }
 
-.bull-icon{
+.overview-bull-icon{
     block-size: 18px;
     inline-size: 18px;
     background: #DDFFDA;
@@ -79,15 +102,15 @@ body{
     border-radius: 3px;
 }
 
-.bull-icon svg{
+.overview-bull-icon svg{
     fill: #00D873;
 }
 
-.product-profit span{
+.overview-profit span{
     color: #00D873;
 }
 
-.stock-count__cntnr{
+.overview-stock-count{
     /* background: rgb(243, 243, 243); */
     /* block-size: 100%; */
     display: flex;
@@ -125,9 +148,9 @@ body{
     align-items: center;
     justify-content: space-between;
     color: rgb(146, 146, 146);
+    font-weight: 500;
 }
 
 .stock-labels span{
     color: black;
-    font-weight: 500;
 }

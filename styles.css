@@ -72,6 +72,63 @@ button{
     background: rgb(233, 233, 233);
 }
 
+.overview-row-cntnr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overview-prod-category{
+    background: rgb(221, 221, 221);
+    padding-inline: 12px;
+    padding-block: 2px;
+    border-radius: 100vh;
+}
+
+.overview-prod-category p{
+    font-size: 13px;
+    color: #747474;
+    letter-spacing: 0.3px;
+}
+
+.overview-threshold p,
+.overview-prod-cost p,
+.overview-prod-profit p,
+.overview-row__stock-level p{
+    font-size: 14px;
+}
+
+.overview-prod-cost,
+.overview-prod-profit,
+.overview-threshold{
+    display: flex;
+    flex-direction: column;
+}
+
+.overview-prod-cost,
+.overview-prod-profit{
+    align-items: end;
+}
+
+.overview-threshold{
+    align-items: start;
+}
+
+.row-stock-level{
+    background: rgb(240, 15, 15);
+    padding-inline: 16px;
+    padding-block: 2px;
+    border-radius: 6px;
+    color: whitesmoke;
+}
+
+.overview-threshold P:last-child,
+.overview-prod-cost p:last-child,
+.overview-prod-sold p{
+    color: #747474;
+}
+
+
 .overview-name__cntnr,
 .overview-name-id{
     display: flex;
@@ -116,11 +173,11 @@ button{
 }
 
 .overview-bull-icon svg{
-    fill: #00D873;
+    fill: #0dc06d;
 }
 
 .overview-profit span{
-    color: #00D873;
+    color: #0dc06d;
 }
 
 .overview-stock-count{
@@ -166,6 +223,32 @@ button{
 
 .stock-labels span{
     color: black;
+}
+
+/* media queries */
+@media screen and (min-width: 610px){
+
+    .overview-col-cntnr{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .overview-threshold,
+    .overview-prod-profit,
+    .overview-row__stock-level{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 864px){
+    .overview-prod-category{
+        display: none;
+    }
+
+    .overview-prod-cost{
+        display: none;
+    }
 }
 
 /* Dialog styles */

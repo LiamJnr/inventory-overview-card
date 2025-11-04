@@ -54,6 +54,7 @@ button{
     /* background: gray; */
     display: flex;
     flex-direction: column;
+    gap: 12px;
     inline-size: 100%;
 }
 
@@ -61,7 +62,7 @@ button{
     border: none;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 18px;
     inline-size: 100%;
     padding: 16px;
     border-radius: 4px;
@@ -76,6 +77,18 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.overview-row-cntnr > *{
+    /* background: blue; */
+    inline-size: 140px;
+}
+
+.overview-prod-category__cntnr{
+    block-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 .overview-prod-category{
@@ -100,22 +113,37 @@ button{
 
 .overview-prod-cost,
 .overview-prod-profit,
-.overview-threshold{
+.overview-threshold,
+.overview-col-cntnr{
     display: flex;
     flex-direction: column;
 }
 
-.overview-prod-cost,
+.overview-col-cntnr{
+    gap: 16px;
+}
+
 .overview-prod-profit{
     align-items: end;
 }
+
+/* .overview-prod-cost{
+    align-items: center;
+} */
 
 .overview-threshold{
     align-items: start;
 }
 
+.overview-row__stock-level{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .row-stock-level{
     background: rgb(240, 15, 15);
+    /* inline-size: 80px; */
     padding-inline: 16px;
     padding-block: 2px;
     border-radius: 6px;
@@ -159,6 +187,7 @@ button{
     align-items: center;
     gap: 4px;
     font-size: 14px;
+    /* background: rebeccapurple; */
 }
 
 .overview-bull-icon{
@@ -226,14 +255,13 @@ button{
 }
 
 /* media queries */
-@media screen and (min-width: 610px){
-
+@media screen and (min-width: 652px){
     .overview-col-cntnr{
         display: none;
     }
 }
 
-@media screen and (max-width: 610px){
+@media screen and (max-width: 652px){
     .overview-threshold,
     .overview-prod-profit,
     .overview-row__stock-level{
@@ -241,11 +269,13 @@ button{
     }
 }
 
-@media screen and (max-width: 864px){
-    .overview-prod-category{
+@media screen and (max-width: 925px){
+    .overview-prod-category__cntnr{
         display: none;
     }
+}
 
+@media screen and (max-width: 925px){
     .overview-prod-cost{
         display: none;
     }

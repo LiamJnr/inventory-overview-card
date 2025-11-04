@@ -121,6 +121,7 @@ button{
 
 .overview-col-cntnr{
     gap: 16px;
+    inline-size: 100%;
 }
 
 .overview-prod-profit{
